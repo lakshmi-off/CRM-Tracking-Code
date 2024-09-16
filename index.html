@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>CRM Tracking Code</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src='//in.fw-cdn.com/31437603/703219.js'chat='true'></script>    
+    <script src='//in.fw-cdn.com/31437603/703219.js' chat='true'></script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -68,6 +67,9 @@
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lname" required>
 
+            <label for="business_name">Business Name</label>
+            <input type="text" id="business_name" name="business_name" required>
+
             <label for="mobile">Mobile Number</label>
             <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
 
@@ -75,10 +77,9 @@
             <input type="email" id="email" name="email" required>
 
             <button><span class="l7_2fn wixui-button__label">Send</span></button>
-
         </form>
-        <script>  
-            document.querySelector("#my_form > button").type = "submit"; 
+        <script>
+            document.querySelector("#my_form > button").type = "submit";
         </script>
     </div>
 </body>
