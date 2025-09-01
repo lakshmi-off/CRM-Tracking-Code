@@ -18,15 +18,28 @@
   </header>
 
   <!-- Product Enquiry Form -->
-  <section class="max-w-lg mx-auto bg-white shadow-lg rounded-2xl p-6 mt-12">
-    <h3 class="text-2xl font-semibold text-center text-pink-600 mb-4">Product Enquiry</h3>
-    <form class="space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
-      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
-      <textarea placeholder="What product are you looking for?" rows="5" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
-      <button type="submit" class="w-full bg-pink-500 text-white py-2 rounded-xl hover:bg-pink-600">Submit Enquiry</button>
-    </form>
-  </section>
+<section class="max-w-lg mx-auto bg-white shadow-lg rounded-2xl p-6 mt-12">
+  <h3 class="text-2xl font-semibold text-center text-pink-600 mb-4">Product Enquiry</h3>
+  <form name="enquiryForm" action="/submit-enquiry" method="post" class="space-y-4">
+    
+    <input type="text" name="name" placeholder="Your Name" required 
+      class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+    
+    <input type="email" name="email" placeholder="Your Email" required 
+      class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+    
+    <input type="text" name="product" placeholder="Product Name / ID" required 
+      class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+    
+    <textarea name="details" placeholder="Tell us more about your requirement" rows="5" required 
+      class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+    
+    <button type="submit" 
+      class="w-full bg-pink-500 text-white py-2 rounded-xl hover:bg-pink-600">
+      Submit Enquiry
+    </button>
+  </form>
+</section>
 
   <!-- Footer -->
   <footer class="bg-pink-200 text-center p-4 mt-12">
