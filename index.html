@@ -1,92 +1,79 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM Tracking Code</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src='//in.fw-cdn.com/31437603/703219.js' chat='true'></script>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .form-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        .form-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .form-container label {
-            font-size: 14px;
-            color: #555;
-        }
-        .form-container input[type="text"],
-        .form-container input[type="email"],
-        .form-container input[type="tel"] {
-            width: 93%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #ff6f61;
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .form-container button:hover {
-            background-color: #ff4f41;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cute Shop - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="form-container">
-        <h2>Contact Us</h2>
-        <form id="my_form">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" required>
+<body class="bg-pink-50 text-gray-700 font-sans">
+  <!-- Header -->
+  <header class="bg-pink-200 p-4 shadow-md flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-pink-700">🌸 Cute Shop</h1>
+    <nav>
+      <a href="index.html" class="mx-2 hover:underline">Home</a>
+      <a href="products.html" class="mx-2 hover:underline">Products</a>
+    </nav>
+  </header>
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname" required>
+  <!-- Hero Section -->
+  <section class="text-center py-12">
+    <h2 class="text-4xl font-bold text-pink-700 mb-4">Welcome to Cute Shop!</h2>
+    <p class="text-lg">We bring you adorable and handcrafted goodies 💕</p>
+  </section>
 
-            <label for="business_name">Business Name</label>
-            <input type="text" id="business_name" name="business_name" required>
+  <!-- Contact Form -->
+  <section class="max-w-lg mx-auto bg-white shadow-lg rounded-2xl p-6 mb-12">
+    <h3 class="text-2xl font-semibold text-center text-pink-600 mb-4">Contact Us</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+      <textarea placeholder="Your Message" rows="4" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+      <button type="submit" class="w-full bg-pink-500 text-white py-2 rounded-xl hover:bg-pink-600">Send</button>
+    </form>
+  </section>
 
-            <label for="mobile">Mobile Number</label>
-            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+  <!-- Footer -->
+  <footer class="bg-pink-200 text-center p-4">
+    <p class="text-sm text-pink-800">© 2025 Cute Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required>
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cute Shop - Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-700 font-sans">
+  <!-- Header -->
+  <header class="bg-pink-200 p-4 shadow-md flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-pink-700">🌸 Cute Shop</h1>
+    <nav>
+      <a href="index.html" class="mx-2 hover:underline">Home</a>
+      <a href="products.html" class="mx-2 hover:underline">Products</a>
+    </nav>
+  </header>
 
-            <!-- Hidden field for Account Created -->
-            <input type="hidden" id="account_created" name="account_created" value="Yes">
+  <!-- Product Requirement Form -->
+  <section class="max-w-lg mx-auto bg-white shadow-lg rounded-2xl p-6 mt-12">
+    <h3 class="text-2xl font-semibold text-center text-pink-600 mb-4">Product Requirement</h3>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+      <textarea placeholder="Describe your product needs..." rows="5" class="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+      <button type="submit" class="w-full bg-pink-500 text-white py-2 rounded-xl hover:bg-pink-600">Submit Request</button>
+    </form>
+  </section>
 
-            <button><span class="l7_2fn wixui-button__label">Send</span></button>
-        </form>
-        <script>
-            document.querySelector("#my_form > button").type = "submit";
-        </script>
-
-    <div class="web-form">
-        <script src='https://stromasys.myfreshworks.com/crm/sales/web_forms/4a059bb68ee0e8b6f46c83f98b38aae9a93d31f9aa1719949bc2200e048873b0/form.js' crossorigin='anonymous' id='fs_4a059bb68ee0e8b6f46c83f98b38aae9a93d31f9aa1719949bc2200e048873b0'></script>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-pink-200 text-center p-4 mt-12">
+    <p class="text-sm text-pink-800">© 2025 Cute Shop. All rights reserved.</p>
+  </footer>
 </body>
 </html>
